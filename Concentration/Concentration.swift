@@ -59,6 +59,10 @@ class Concentration
         return true
     }
     
+    func resetCards() {
+        cards = [Card]()
+    }
+
     init(numberOfPairsOfCards: Int) {
         var spawn = [Card]()
         for _ in 0..<numberOfPairsOfCards {
